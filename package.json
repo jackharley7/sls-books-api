@@ -1,0 +1,29 @@
+{
+  "name": "books-api",
+  "version": "1.0.0",
+  "description": "Books API",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jackharley7/sls-books-api"
+  },
+  "author": "Jack Harley",
+  "scripts": {
+    "seed": "node ./integration_tests/seed",
+    "start": "sls offline start",
+    "test": "mocha ./integration_tests/tests/**/*.spec.js",
+    "deploy": "serverless deploy",
+    "teardown": "serverless remove"
+  },
+  "dependencies": {
+    "uuid": "^7.0.3"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.648.0",
+    "axios": "^0.19.2",
+    "chai": "^4.2.0",
+    "mocha": "^7.1.1",
+    "serverless": "^1.67.0",
+    "serverless-offline": "^6.1.2"
+  }
+}

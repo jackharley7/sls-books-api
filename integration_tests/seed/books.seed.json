@@ -1,0 +1,14 @@
+[
+  {
+    "id": "1",
+    "name:": "book1",
+    "releaseDate:": 123456789,
+    "authorName:": "author1"
+  },
+  {
+    "id": "2",
+    "name:": "book2",
+    "releaseDate:": 123456789,
+    "authorName:": "author2"
+  }
+]

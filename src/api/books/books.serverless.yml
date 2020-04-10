@@ -1,0 +1,21 @@
+
+add:
+  handler: src/api/books/add.handler
+  events:
+    - http: post /book/add
+update:
+  handler: src/api/books/update.handler
+  events:
+    - http: post /book/{id}/update
+delete:
+  handler: src/api/books/delete.handler
+  events:
+    - http: post /book/{id}/delete
+list:
+  handler: src/api/books/list.handler
+  events:
+    - http: get /books
+get:
+  handler: src/api/books/get.handler
+  events:
+    - http: get /book/{id}
